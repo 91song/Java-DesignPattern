@@ -1,16 +1,16 @@
 package com.visp.designpattern.singleton;
 
-public class Singleton {
-	private static Singleton instance = null;
+public class SingletonA {
+	private static SingletonA instance = null;
 	
-	private Singleton() {
+	private SingletonA() {
 		
 	}
 	
 	// 非线程安全
-	public static Singleton getInstance() {
+	public static SingletonA getInstance() {
 		if (instance == null) {
-			instance = new Singleton();
+			instance = new SingletonA();
 		}
 		return instance;
 	}

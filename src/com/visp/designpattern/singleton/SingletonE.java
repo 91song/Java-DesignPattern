@@ -1,19 +1,19 @@
 package com.visp.designpattern.singleton;
 
-public class Singleton5 {
-	private static Singleton5 instance = null;
+public class SingletonE {
+	private static SingletonE instance = null;
 
-	private Singleton5() {
+	private SingletonE() {
 
 	}
 
 	private static synchronized void syncInit() {
 		if (instance == null) {
-			instance = new Singleton5();
+			instance = new SingletonE();
 		}
 	}
 
-	public static Singleton5 getInstance() {
+	public static SingletonE getInstance() {
 		if (instance == null) {
 			syncInit();
 		}

@@ -1,5 +1,5 @@
 package com.visp.designpattern.observer;
 
-public class Subject1 extends Subject {
+public class SubjectA extends Subject {
 
 }

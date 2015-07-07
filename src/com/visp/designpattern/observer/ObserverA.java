@@ -1,10 +1,10 @@
 package com.visp.designpattern.observer;
 
-public class Observer1 extends Observer {
+public class ObserverA extends Observer {
 	private String name;
 	private Subject subject;
 	
-	public Observer1(String name, Subject subject) {
+	public ObserverA(String name, Subject subject) {
 		this.name = name;
 		this.subject = subject;
 	}
