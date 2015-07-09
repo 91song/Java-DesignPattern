@@ -8,7 +8,7 @@ public class PropertiesUtil {
 	private static PropertiesUtil instance;
 
 	private PropertiesUtil() {
-		super();
+
 	}
 
 	public static PropertiesUtil getInstance() {
@@ -22,7 +22,7 @@ public class PropertiesUtil {
 	public Properties getProperties(String fileName) {
 		InputStream inputStream = getClass().getClassLoader()
 				.getResourceAsStream(fileName);
-		
+
 		Properties properties = new Properties();
 
 		try {
